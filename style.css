@@ -1,0 +1,64 @@
+
+.raleproba {
+    color: gray;
+    
+}
+
+
+.wrap-button {
+    width: 120px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.wrap-button .btn-load {
+    height: 20px;
+    padding: 20px;
+}
+
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    color: red;
+    
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1em;
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+  }
+
+
+
+
+.header {
+    background-color:white;
+}
+
+
+.btn-dark {
+    color: #fff;
+    background-color: black;
+    border-color: #357ebd; 
+}
+
+.btn-dark:focus {     
+    background-color:green;    
+}
+
+.btn-dark:hover {
+    color: orange;
+    background-color: purple;
+    
+}
+
+.img-fluid {
+    height: 240px;
+    width: 340x;
+}
