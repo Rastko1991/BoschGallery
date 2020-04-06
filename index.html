@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 
-  <title>Bosch Online Store</title>
+  <title>NYC Photo Blog</title>
 </head>
 
 <body>
@@ -23,8 +23,13 @@
     <div class="container">
       <div class="row">
           <div class="col-8">
-            <h1 class="m-3 justify-content-left raleproba">Photo Blog</h1>
+            <h1 class="m-3 justify-content-left headline">Photo Blog</h1>
             <hr style="height:3px; border:none; color:gray;background-color:gray;" /></hr>
+          </div>
+          <div class="col-4 average-sum">
+            <div class="row" height="50%"><p>Average sum:</p></div>
+            <div class="row"><p id="calculator"></p></div>
+            
           </div>
       </div>
     </div>
@@ -43,7 +48,7 @@
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                <form action="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                 <button type="submit" class="btn btn-dark">Link</button>
               </form>
               </div>             
@@ -52,7 +57,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span data-value="5">☆</span><span data-value="4">☆</span><span data-value="3">☆</span><span data-value="2">☆</span><span data-value="1">☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -69,7 +74,7 @@
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                <form action="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -78,7 +83,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -86,6 +91,109 @@
         </div>
       </div>
 
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/2190283/pexels-photo-2190283.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-dark">Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row d-none">
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/534757/pexels-photo-534757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-dark" disabled>Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/89485/pexels-photo-89485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/89485/pexels-photo-89485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-dark" disabled>Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/3889868/pexels-photo-3889868.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-danger" disabled>Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row d-none">
       <div class="col-md-4">
         <img class="img-fluid" src="https://images.pexels.com/photos/1389339/pexels-photo-1389339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
@@ -94,7 +202,7 @@
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://images.pexels.com/photos/1389339/pexels-photo-1389339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                <form action="https://images.pexels.com/photos/1389339/pexels-photo-1389339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -103,35 +211,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="row d-none">
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
-                  <button disabled type="submit" class="btn btn-dark">Link</button>
-                </form>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -139,62 +219,14 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
+        <img class="img-fluid" src="https://images.pexels.com/photos/1411590/pexels-photo-1411590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <button type="button" class="btn btn-dark" disabled>Link</button>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <button type="button" class="btn btn-danger" disabled>Link</button>
-                
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-    <div class="row d-none">
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/1411590/pexels-photo-1411590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -203,7 +235,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -211,14 +243,14 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
+        <img class="img-fluid" src="https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -227,31 +259,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
-                  <button type="submit" class="btn btn-dark">Link</button>
-                </form>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -262,14 +270,14 @@
   
     <div class="row d-none" >
       <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
+        <img class="img-fluid" src="https://images.pexels.com/photos/40142/new-york-skyline-manhattan-hudson-40142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/40142/new-york-skyline-manhattan-hudson-40142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -278,7 +286,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -286,14 +294,14 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
+        <img class="img-fluid" src="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/3586966/pexels-photo-3586966.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -302,7 +310,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -310,14 +318,14 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
+        <img class="img-fluid" src="https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/802024/pexels-photo-802024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -326,82 +334,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row d-none" >
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
-                  <button type="submit" class="btn btn-dark">Link</button>
-                </form>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
-                  <button type="submit" class="btn btn-dark">Link</button>
-                </form>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-                </div>
-              </div>           
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
-          alt="">
-        <div class="d-flex justify-content-center  m-3">
-          <div class="container">
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
-                  <button type="submit" class="btn btn-dark">Link</button>
-                </form>
-              </div>             
-            </div>
-            <div class="row">
-              <div class="col-4"></div>
-              <div class="col-5">
-                <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -412,14 +345,14 @@
 
     <div class="row d-none" >
       <div class="col-md-4">
-        <img class="img-fluid" src="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg"
+        <img class="img-fluid" src="https://images.pexels.com/photos/3875821/pexels-photo-3875821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/3875821/pexels-photo-3875821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -428,7 +361,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -436,14 +369,14 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="img-fluid" src="https://images.pexels.com/photos/378570/pexels-photo-378570.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        <img class="img-fluid" src="https://images.pexels.com/photos/220757/pexels-photo-220757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://beastunleashedfitness.com/wp-content/uploads/2015/12/placeholder-8.jpg">
+                <form action="https://images.pexels.com/photos/220757/pexels-photo-220757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -452,7 +385,7 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
@@ -460,14 +393,14 @@
         </div>
       </div>
       <div class="col-md-4">
-        <img class="img-fluid" src="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+        <img class="img-fluid" src="https://images.pexels.com/photos/356844/pexels-photo-356844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
           alt="">
         <div class="d-flex justify-content-center  m-3">
           <div class="container">
             <div class="row">
               <div class="col-4"></div>
               <div class="col-4" style="text-align:center">
-                <form target="_blank" action="https://images.pexels.com/photos/313782/pexels-photo-313782.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                <form action="https://images.pexels.com/photos/356844/pexels-photo-356844.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
                   <button type="submit" class="btn btn-dark">Link</button>
                 </form>
               </div>             
@@ -476,7 +409,82 @@
               <div class="col-4"></div>
               <div class="col-5">
                 <div class="rating">
-                  <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row d-none" >
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/2706653/pexels-photo-2706653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/2706653/pexels-photo-2706653.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-dark">Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/1388069/pexels-photo-1388069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/1388069/pexels-photo-1388069.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-dark">Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
+                </div>
+              </div>           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img class="img-fluid" src="https://images.pexels.com/photos/332208/pexels-photo-332208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+          alt="">
+        <div class="d-flex justify-content-center  m-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-4" style="text-align:center">
+                <form action="https://images.pexels.com/photos/332208/pexels-photo-332208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" method="get" target="_blank">
+                  <button type="submit" class="btn btn-dark">Link</button>
+                </form>
+              </div>             
+            </div>
+            <div class="row">
+              <div class="col-4"></div>
+              <div class="col-5">
+                <div class="rating">
+                  <span class="five-point">☆</span><span class="four-point">☆</span><span class="three-point">☆</span><span class="two-point">☆</span><span class="one-point">☆</span>
                 </div>
               </div>           
             </div>
