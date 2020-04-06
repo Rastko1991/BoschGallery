@@ -1,3 +1,20 @@
+
+.headline {
+    color: gray;
+    
+}
+
+.average-sum {
+    font-family: inherit;
+    font-weight: 500;
+    color: gray;
+}
+
+.img-fluid {
+    height: 240px;
+    width: 340x;
+}
+
 .wrap-button {
     width: 120px;
     overflow: hidden;
@@ -51,7 +68,4 @@
     
 }
 
-.img-fluid {
-    height: 240px;
-    width: 340x;
-}
+
